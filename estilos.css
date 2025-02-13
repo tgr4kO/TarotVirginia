@@ -1,0 +1,288 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./imagenes/fondobody.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-image: url('./imagenes/fondo2.webp');
+    background-size: cover;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+header p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Logos */
+img.logo,
+img.logo2 {
+    position: absolute;
+    width: 10%;
+    max-width: 80px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img.logo {
+    left: 5%;
+}
+
+img.logo2 {
+    right: 5%;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    padding: 20px;
+}
+
+main p {
+    font-size: 2rem;
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5);
+    margin: 10px 0;
+    text-align: center;
+}
+
+main p:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5remz;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 12vh;
+    }
+
+    img.logo,
+    img.logo2 {
+        width: 15%;
+        max-width: 60px;
+    }
+
+    main p {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 10vh;
+    }
+
+    img.logo,
+    img.logo2 {
+        width: 20%;
+        max-width: 50px;
+    }
+
+    main p {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/*
+img.logo {
+    left: 5%;
+    top: 0%;
+
+    position: absolute;
+    width: 12%;
+    height: 100%;
+
+}
+
+img.logo2 {
+    right: 5%;
+    top: 0%;
+    position: absolute;
+    width: 12%;
+    height: 100%;
+}
+
+body {
+    background-image: url('./imagenes/fondobody.webp');
+    background-size: cover;
+}
+
+header {
+    background-image: url('./imagenes/fondo2.webp');
+    background-size: cover;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    display: flex;
+    z-index: 1000;
+}
+
+header p {
+    position: absolute;
+    top: 40%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+    animation: glow 1.5s ease-in-out infinite alternate;
+
+}
+
+main {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main p {
+    margin-top: auto;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+}
+
+main p:nth-child(even) {
+    margin-left: 50%;
+    align-self: flex-start;
+    transform: translateX(5%);
+}
+
+main p:nth-child(odd) {
+    margin-right: 50%;
+    align-self: flex-end;
+    transform: translateX(10%);
+}
+
+main p:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    left: 0;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    display: flex;
+
+}
+
+footer p {
+    font-size: 3rem;
+    margin-top: auto;
+}
+
+footer img {
+    width: 80%;
+    height: 80%;
+
+
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    right: 25%;
+    font-size: 4rem;
+    margin-top: 1%;
+    color: rgb(102, 2, 2);
+    border: black;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+    }
+
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+    }
+}
+
+@keyframes glow2 {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+        font-size: 2rem;
+    }
+
+
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(204, 0, 255, 0.5), 0 0 30px rgba(221, 0, 255, 0.5);
+        font-size: 3rem;
+    }
+}
+
+*/
